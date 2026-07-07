@@ -1,4 +1,4 @@
-import { apiClient } from "./client";
+import { apiClient } from "../../client";
 import type { Prescription } from "@/types";
 
 export async function getPatientPrescriptions(

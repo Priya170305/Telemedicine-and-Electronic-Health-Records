@@ -14,10 +14,11 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
-    "baseUrl": "",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@/types": ["src/types.ts"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "API/src"]
 }

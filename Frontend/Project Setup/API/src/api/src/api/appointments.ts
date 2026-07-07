@@ -1,4 +1,4 @@
-import { apiClient } from "./client";
+import { apiClient } from "../../client";
 import type { Appointment } from "@/types";
 
 export async function getMyAppointments(): Promise<Appointment[]> {
@@ -26,9 +26,7 @@ export async function updateAppointmentStatus(
   return data;
 }
 
-export async function getAvailableDoctors(): Promise
-  { id: string; name: string; specialty: string }[]
-> {
+export async function getAvailableDoctors(): Promise<{ id: string; name: string; specialty: string }[]> {
   const { data } = await apiClient.get("/doctors");
   return data;
 }
