@@ -1,4 +1,4 @@
-import { apiClient } from "../../client";
+import { apiClient } from "../../client.ts";
 import type { MedicalRecord } from "@/types";
 
 export async function getPatientRecords(patientId: string): Promise<MedicalRecord[]> {

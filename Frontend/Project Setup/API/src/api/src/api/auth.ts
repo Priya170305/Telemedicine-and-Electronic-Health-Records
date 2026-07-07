@@ -1,4 +1,4 @@
-import { apiClient } from "../../client";
+import { apiClient } from "../../client.ts";
 import type { AuthResponse, UserRole } from "@/types";
 
 export interface LoginPayload {

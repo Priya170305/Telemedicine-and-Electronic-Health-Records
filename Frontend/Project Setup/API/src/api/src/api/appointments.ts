@@ -1,4 +1,4 @@
-import { apiClient } from "../../client";
+import { apiClient } from "../../client.ts";
 import type { Appointment } from "@/types";
 
 export async function getMyAppointments(): Promise<Appointment[]> {
